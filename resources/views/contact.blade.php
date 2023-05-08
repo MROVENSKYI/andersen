@@ -23,13 +23,13 @@
     </div>
 </form>
 </section>
-@foreach($contacts as $el)
-<div class="container"><table>
+@foreach($contacts as $contact)
+<div class="container mt-2"><table>
 <tr>
-<td>{{ $el->name }} |</td>
-<td>{{ $el->email }} |</td>
-<td>{{ $el->created_at }} |</td>
-<td>{{ $el->message }} |</td>
+<td>{{ $contact->name }} |</td>
+<td>{{ $contact->email }} |</td>
+<td>{{ $contact->created_at }} |</td>
+<td>{{ $contact->message }} |</td>
 @endforeach
 </tr>
 </table>
