@@ -30,10 +30,11 @@
 <td>{{ $contact->email }} |</td>
 <td>{{ $contact->created_at }} |</td>
 <td>{{ $contact->message }} |</td>
-@endforeach
 </tr>
 </table>
 </div>
+@endforeach
+
 @endsection    
 
 
