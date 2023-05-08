@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,16 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-    Route::get('/contact', function () {
-    return view('contact');
-    })->name('contact');
-
-    Route::get('/', function () {
-        return view('contact');
-        })->name('contact');
-
-    Route::get('/contact/submit', 'App\Http\Controllers\ContactController@allData')->name('contact-data');
-    Route::post('/contact/submit', 'App\Http\Controllers\ContactController@submit')->name('contact-form');
-
+Route::resource('contacts', ContactController::class)
+->only(['index','store','create']);
 
     

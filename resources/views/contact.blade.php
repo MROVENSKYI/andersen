@@ -4,7 +4,7 @@
 
 @section('content')
 <section class="container mt-5">
-    <form action="{{route('contact-form')}}" method="post" >
+    <form action="{{route('contacts.store')}}" method="post" >
        @csrf 
     <div class="form-group">
         <label for="name">name</label>
@@ -23,13 +23,16 @@
     </div>
 </form>
 </section>
-@foreach($data as $el)
-<div class="container mt-5">
-<span>{{ $el->name }} name</span>
-<span>{{ $el->email }} email</span>
-<span>{{ $el->created_at }} created_at</span>
-<span>{{ $el->message }} message</span>
+@foreach($contacts as $el)
+<div class="container"><table>
+<tr>
+<td>{{ $el->name }} |</td>
+<td>{{ $el->email }} |</td>
+<td>{{ $el->created_at }} |</td>
+<td>{{ $el->message }} |</td>
 @endforeach
+</tr>
+</table>
 </div>
 @endsection    
 
