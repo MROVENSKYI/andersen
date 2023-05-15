@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container mt-5"></div>
-
+  @include('inc.messages')
   @yield('content') 
 </body>
 </html> 
