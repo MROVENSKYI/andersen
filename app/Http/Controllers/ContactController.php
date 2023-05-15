@@ -20,11 +20,6 @@ class ContactController extends Controller
         );
     }
 
-    public function create(): View
-    {
-        return view('contact');
-    }
-
     public function store(ContactRequest $request): RedirectResponse
     {
         Contact::create([
