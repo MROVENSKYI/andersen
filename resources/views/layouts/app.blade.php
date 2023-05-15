@@ -8,16 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container mt-5">
+  <div class="container mt-5"></div>
 
-
-$input = [4,12,73,8,1,1,36,7,6,22,22,22,3];
-$input = array_count_values($input);
-var_dump($input);
-$func = fn(string $str) => $str
-var_dump($func);
-    @include('inc.messages')
-  </div>
   @yield('content') 
 </body>
 </html> 
