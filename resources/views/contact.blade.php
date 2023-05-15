@@ -23,8 +23,10 @@
     </div>
 </form>
 </section>
+
 @foreach($contacts as $contact)
-<div class="container mt-2"><table>
+
+<div class="container mt-5"><table>
 <tr>
 <td>{{ $contact->name }} |</td>
 <td>{{ $contact->email }} |</td>

@@ -9,6 +9,13 @@
 </head>
 <body>
   <div class="container mt-5">
+
+
+$input = [4,12,73,8,1,1,36,7,6,22,22,22,3];
+$input = array_count_values($input);
+var_dump($input);
+$func = fn(string $str) => $str
+var_dump($func);
     @include('inc.messages')
   </div>
   @yield('content') 
